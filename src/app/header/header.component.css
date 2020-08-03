@@ -1,0 +1,9 @@
+.text-color-white{
+    color: white;
+  }
+  a.navbar-brand:hover{ 
+    color: white;
+  }
+  .navbar-collapse{
+    color: white;
+  }

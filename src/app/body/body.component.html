@@ -1,0 +1,49 @@
+<div class="containerNew" style="background-color: white;margin: 20px;padding: 20px;">
+<nav class="navbar navbar-expand-lg" style="background-color: white;">
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <a class="navbar-brand" href="#" style="color: black; font-size: 25px;">
+                <img src="../../assets/images/ico_users.svg"  alt="">
+                Users
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </ul>
+        <form class="my-2 my-lg-0">
+        <input class="mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-primary my-2 my-sm-0" type="button" style="background-color: #FFA500; border-color: #FFA500;color: white;" (click)="editItem(newuser)">Add User</button>
+        </form>
+    </div>
+</nav>
+  <div class="row">
+    <div class="table-responsive" style="margin: 20px;">
+        <table id="productSizes" class="table">
+            <thead>
+                <tr class="d-flex">
+                    <th class="col-2">Name</th>
+                    <th class="col-3">Email</th>
+                    <th class="col-3">Role Type</th>
+                    <th class="col-2">Status</th>
+                    <th class="col-2"></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let user of allUsers | async" class="d-flex">
+                    <td class="col-2">{{user.Name}}</td>
+                    <td class="col-3">{{user.Email}}</td>
+                    <td class="col-3">{{user.RoleType}}</td>
+                    <td class="col-2">{{user.Status}}</td>
+                    <td class="col-2" >
+                        <img src="../../assets/images/ico_edit.svg" width="25" height="25" alt="" (click)="editItem(user)">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <img src="../../assets/images/delete.svg" width="25" height="25" alt="" (click)="deleteUser(user.Id)">
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+  </div>
+</div>

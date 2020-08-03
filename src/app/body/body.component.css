@@ -1,0 +1,10 @@
+.containerNew {
+    height: 100%;
+}
+.bottomBorder {
+    border: black;
+    border-block-end: solid;
+    border-block-end-color: lightgrey;
+    border-block-end-width: .05px;
+    background-color: white;
+}

@@ -1,0 +1,64 @@
+<div style="background-color: white;margin: 20px;">
+    <div class="modal-header">
+        <h4 class="modal-title" style="font-family: sans-serif;">Add User</h4>
+        <button type="button" class="close" aria-label="Close" >
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+            <div class="form-group">
+              <input type="Name" class="form-control" id="Name" aria-describedby="Name" placeholder="Name">
+            </div>
+            <div class="form-group">
+              <input type="Email" class="form-control" id="Email" placeholder="Email">
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    Role Type: &nbsp;
+                </label>
+                <input class="form-check-input" type="radio" name="RoleType" id="RoleType" value="Admin" checked>
+                <label class="form-check-label" for="RoleType">
+                  Admin
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="RoleType" id="RoleType" value="Customer Executive" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                  Customer Executive
+                </label>
+            </div>
+            <br>
+            <br>
+            <div class="form-group">
+                <input type="Mobile" class="form-control" id="Mobile" aria-describedby="Mobile" placeholder="Mobile No">
+            </div>
+            <div class="form-check form-check-inline">
+                <label class="form-check-label">
+                    Status: &nbsp;
+                </label>
+                <input class="form-check-input" type="radio" name="Status" id="Status" value="Active" checked>
+                <label class="form-check-label" for="RoleType">
+                    Active
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Status" id="Status" value="Pending" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    Pending
+                </label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="Status" id="Status" value="InActive" checked>
+                <label class="form-check-label" for="exampleRadios1">
+                    InActive
+                </label>
+            </div>
+            <br>
+            <br>
+            <button type="submit" class="btn btn-primary btn-block" style="background-color: #FFA500; border-color: #FFA500;;">Add User</button>
+          </form>
+      </div>
+</div>
+
+ 
